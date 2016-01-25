@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fB-4k-6DW">
+                                <rect key="frame" x="16" y="550" width="55" height="30"/>
+                                <state key="normal" title="Loading"/>
+                                <connections>
+                                    <action selector="loading:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BnY-PG-ziU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xkn-Mh-aBO">
+                                <rect key="frame" x="90" y="550" width="58" height="30"/>
+                                <state key="normal" title="Success"/>
+                                <connections>
+                                    <action selector="success:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2tD-Kq-co8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="367-hZ-DCY">
+                                <rect key="frame" x="156" y="550" width="30" height="30"/>
+                                <state key="normal" title="Fail"/>
+                                <connections>
+                                    <action selector="fail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CgX-mA-sCW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lB8-md-EhQ">
+                                <rect key="frame" x="16" y="507" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="reloading:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wqr-B1-r5C"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Xkn-Mh-aBO" secondAttribute="bottom" constant="20" id="25l-Il-eCg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8fB-4k-6DW" secondAttribute="bottom" constant="20" id="Elg-fp-RP4"/>
+                            <constraint firstItem="8fB-4k-6DW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-4" id="GV3-5W-a3P"/>
+                            <constraint firstItem="Xkn-Mh-aBO" firstAttribute="leading" secondItem="8fB-4k-6DW" secondAttribute="trailing" constant="19" id="LL2-IL-zhL"/>
+                            <constraint firstItem="lB8-md-EhQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-4" id="ZNA-cS-H2b"/>
+                            <constraint firstItem="8fB-4k-6DW" firstAttribute="top" secondItem="lB8-md-EhQ" secondAttribute="bottom" constant="13" id="ahS-fz-Vej"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="367-hZ-DCY" secondAttribute="bottom" constant="20" id="rqd-Ct-aF3"/>
+                            <constraint firstItem="367-hZ-DCY" firstAttribute="leading" secondItem="Xkn-Mh-aBO" secondAttribute="trailing" constant="8" id="sfB-DU-v6E"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
